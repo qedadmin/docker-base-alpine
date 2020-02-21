@@ -25,7 +25,7 @@ LABEL   org.label-schema.schema-version="1.0" \
 ## Install packages
 RUN     \
         echo "**** Install packages ****" && \
-        apk add --no-cache tzdata
+        apk add --no-cache bash curl openssl tzdata
 
 ## root filesystem
 COPY    root /
